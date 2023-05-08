@@ -1,0 +1,36 @@
+# 这里的 name 改成你自己的workers 的名字
+name = "cpgpt-telegram"
+compatibility_date = "2023-05-08"
+main = "./dist/index.js"
+workers_dev = false
+
+# 这里的 id 为必填项 请填写你的 kv namespace id
+# preview_id 只在调试时使用，不需要请删除
+
+kv_namespaces = [
+  { binding = "DATABASE", id = "cp-space", preview_id = "" }
+]
+
+[vars]
+
+# 更多参数使用请查看README.md
+# 没有注释的参数为必填项
+# 写了参数的选项为该参数的默认值 
+# 要使用前面有#的属性请去掉#号
+# 所有变量必须为字符串，多个参数的值之间用逗号隔开
+
+# 基本配置
+API_KEY = "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"
+TELEGRAM_AVAILABLE_TOKENS = "6166279318:AAFMmKPXzSCAjV8qmxbe1SJ4yLNftLSPCuE"
+CHAT_WHITE_LIST = "813948977"
+I_AM_A_GENEROUS_PERSON = "false"
+# AUTO_TRIM_HISTORY = "false"
+# MAX_HISTORY_LENGTH = "20"
+# DEBUG_MODE = "false"
+# CHAT_MODEL = "gpt-3.5-turbo"
+
+# 群组相关配置
+GROUP_CHAT_BOT_ENABLE = "true"
+TELEGRAM_BOT_NAME = "cp_gpt_bot"
+GROUP_CHAT_BOT_SHARE_MODE = "true"
+CHAT_GROUP_WHITE_LIST = "1001694951767,-1001329882637,-940124013"
